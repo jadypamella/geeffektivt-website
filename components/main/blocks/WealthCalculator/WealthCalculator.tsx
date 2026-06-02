@@ -236,7 +236,7 @@ export const WealthCalculator: React.FC<WealthCalculatorProps> = ({
           </table>
         </div>
         */}
-        <div data-cy="wealthcalculator-explanation">
+        <div data-cy="wealthcalculator-explanation" className={styles.calculator__explanation}>
           <BlockContentRenderer content={[data_explanation]} />
         </div>
       </AnimateHeight>

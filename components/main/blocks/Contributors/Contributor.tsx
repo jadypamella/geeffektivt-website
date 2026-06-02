@@ -29,13 +29,13 @@ export const Contributor: React.FC<
 }) => {
   let contactString = "";
   if (locale === "no") {
-    contactString = "Ta kontakt med";
+    contactString = "Ta kontakt";
   } else if (locale === "dk") {
-    contactString = "Tag kontakt med";
+    contactString = "Tag kontakt";
   } else if (locale === "sv") {
-    contactString = "Ta kontakt med";
+    contactString = "Ta kontakt";
   } else {
-    contactString = "Contact ";
+    contactString = "Contact";
   }
 
   return (
@@ -50,13 +50,7 @@ export const Contributor: React.FC<
       <span className={styles.contributor__additional + " detailheader"}>{additional ?? ""}</span>
       {contactLink ? (
         <a href={`mailto:${email}`}>
-          <span className={styles.contributor__email + " caption"}>
-            → {contactString}
-            <span className={styles.contributor__email_name}>
-              {" "}
-              {first_name ? first_name : name.split(" ")[0]}
-            </span>
-          </span>
+          <span className={styles.contributor__email + " caption"}>→ {contactString}</span>
         </a>
       ) : (
         <span className={styles.contributor__email + " caption"}>{email ?? ""}</span>

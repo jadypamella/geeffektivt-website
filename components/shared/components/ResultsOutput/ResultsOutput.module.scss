@@ -132,12 +132,15 @@
 
     .header {
       margin-top: 2rem;
-      width: calc(100% + 10vw);
+      width: 100vw;
+      margin-left: -5vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
       margin-bottom: 1rem;
 
       .inner {
         gap: 1rem;
-        padding: 0 2rem;
+        padding: 0;
         grid-template-columns: 1fr;
         grid-auto-flow: row;
 

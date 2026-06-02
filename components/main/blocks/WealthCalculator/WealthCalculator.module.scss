@@ -181,6 +181,7 @@
   .calculator {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr max-content;
+    overflow-x: hidden;
   }
 
   .calculator__impact {
@@ -238,6 +239,24 @@
   .calculator__explanation__toggle {
     grid-column: 1;
     grid-row: 5;
+  }
+
+  .calculator__explanation {
+    h2 {
+      font-size: 1.4rem;
+      line-height: 130%;
+    }
+    h3 {
+      font-size: 1.2rem;
+      line-height: 130%;
+    }
+    h4 {
+      font-size: 1rem;
+      line-height: 130%;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 
   .calculator__impact__description p {
